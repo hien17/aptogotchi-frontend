@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 "use client";
 
 import Script from "next/script";
@@ -18,8 +17,4 @@ export const GeoTargetly = () => {
       }}
     />
   );
-=======
-export const GeoTargetly = () => {
-  return <div>GeoTargetly</div>;
->>>>>>> Stashed changes
 };

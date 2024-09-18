@@ -12,3 +12,13 @@ export interface PetParts {
   ear: number;
   face: number;
 }
+
+export const DEFAULT_PET = {
+  name: "Unknown",
+  energy_points: 0,
+  parts: {
+    body: 0,
+    ear: 0,
+    face: 0,
+  },
+};
