@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 "use client";
 
 import { Pet } from "@/app/home/Pet";
@@ -35,4 +36,10 @@ export const usePet = () => {
   }
 
   return context;
+=======
+export const PetProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
+  return <div>PetProvider</div>;
+>>>>>>> Stashed changes
 };
