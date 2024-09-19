@@ -1,7 +1,7 @@
 "use client";
 
 import { useKeylessAccount } from "@/context/KeylessAccountContext";
-import Connected from "./Connected";
+import { Connected } from "./Connected";
 import NotConnected from "./NotConnected";
 
 export function Body() {
