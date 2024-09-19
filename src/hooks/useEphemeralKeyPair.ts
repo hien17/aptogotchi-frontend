@@ -15,13 +15,13 @@ export const getLocalEphemeralKeyPair = (
   if (!ephemeralKeyPair) return null;
 
   // If the account is valid, return it, otherwise remove it from the device and return null
-  return validateEpheemralKeyPair(nonce, ephemeralKeyPair);
+  return validateEphemralKeyPair(nonce, ephemeralKeyPair);
 };
 
 // Validate the ephemeral key pair with the given nonce and the expiry timestamp. If the nonce does not match
 // the generated nonce of the ephemeral key pair, the ephemeral key pair is removed from localStorage. This is
 // to validate that the nonce algorithm is the same.
-export const validateEpheemralKeyPair = (
+export const validateEphemralKeyPair = (
   nonce: string,
   ephemeralKeyPair: EphemeralKeyPair
 ): EphemeralKeyPair | null => {
