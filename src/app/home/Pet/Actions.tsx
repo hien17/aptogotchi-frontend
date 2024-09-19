@@ -89,7 +89,7 @@ export function Actions({ selectedAction, setSelectedAction }: ActionsProps) {
           energy_points: newEnergyPoints,
         };
       });
-    } catch (error: any) {
+    } catch (error) {
       console.error(error);
       toast.error("Failed to feed your pet. Please try again.");
     } finally {
@@ -144,7 +144,7 @@ export function Actions({ selectedAction, setSelectedAction }: ActionsProps) {
           energy_points: newEnergyPoints,
         };
       });
-    } catch (error: any) {
+    } catch (error) {
       console.error(error);
       toast.error("Failed to play with your pet. Please try again.");
     } finally {
@@ -186,7 +186,7 @@ export function Actions({ selectedAction, setSelectedAction }: ActionsProps) {
       });
 
       setPet(undefined);
-    } catch (error: any) {
+    } catch (error) {
       console.error(error);
       toast.error("Failed to delete your pet. Please try again.");
     } finally {
