@@ -28,12 +28,10 @@ export const KeylessAccountProvider: React.FC<{
 
 export const useKeylessAccount = () => {
   const context = useContext(KeylessAccountContext);
-
   if (!context) {
     throw new Error(
       "useKeylessAccount must be used within a KeylessAccountProvider"
     );
   }
-
   return context;
 };
